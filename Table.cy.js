@@ -50,7 +50,7 @@ it('To know the total number of pages', () =>{
         cy.get('table[class="table table-bordered table-hover"]>tbody>tr')
         .each(($row, index, $rows) =>{
             cy.wrap($row).within( () =>{
-                cy.get('td:nth-child(3)').then( (e) =>{
+                cy.get('td:nth-child(4)').then( (e) =>{
                     cy.log(e.text());
                 } )
             } )
